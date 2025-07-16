@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Successful</title>
+    <link rel="stylesheet" href="/static/css/reg_success.css">
+</head>
+<body>
+    <div class="success-container">
+        <div class="success-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+        </div>
+        
+        <div class="success-header">
+            <h2>Registration Successful!</h2>
+        </div>
+        
+        <p class="success-message">
+            Thank you for joining our community. Your account has been successfully created.
+        </p>
+        
+        <div class="welcome-message">
+            Welcome, <span>{{ user.username }}</span>!
+        </div>
+        
+        <a href="{% url 'login' %}" class="login-button">Continue to Login</a>
+        
+        <div class="additional-options">
+            <p>Need help? <a href="#">Contact support</a></p>
+        </div>
+    </div>
+</body>
+</html>

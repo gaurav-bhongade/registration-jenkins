@@ -1,0 +1,126 @@
+:root {
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --accent-color: #4895ef;
+    --light-color: #f8f9fa;
+    --dark-color: #212529;
+    --success-color: #4bb543;
+    --error-color: #ff3333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.welcome-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 50px 40px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.welcome-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #e3f2fd;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.welcome-icon svg {
+    width: 40px;
+    height: 40px;
+    color: var(--primary-color);
+}
+
+.welcome-header h2 {
+    color: var(--dark-color);
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.welcome-header h2 span {
+    color: var(--primary-color);
+}
+
+.welcome-message {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.logout-button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: white;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.logout-button:hover {
+    background-color: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(67, 97, 238, 0.3);
+}
+
+.user-actions {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.action-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.action-link:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .welcome-container {
+        padding: 40px 20px;
+    }
+    
+    .welcome-icon {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .welcome-header h2 {
+        font-size: 24px;
+    }
+}
