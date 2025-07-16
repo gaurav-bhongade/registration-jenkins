@@ -9,6 +9,6 @@ services:
     - .:/app
    ports:
     - 8000:8000
-   image: app-image
+   image: registration-app
    container_name: app-container
    command: gunicorn simple_registration.wsgi:application --bind 0.0.0.0:8000
